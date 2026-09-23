@@ -394,7 +394,7 @@ body {
     text-align: center;
     padding: 30px 20px;
     background-color: var(--gray-color);
-    display: none;
+    display: block;
 }
 
 .cv-download-btn.show {

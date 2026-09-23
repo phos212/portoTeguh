@@ -22,7 +22,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background-color: #fafafa;
-    padding-top: 60px;
 }
 
 .container {
@@ -61,8 +60,9 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--dark-color) 0%, #2a2a2a 100%);
     color: var(--light-color);
-    padding: 80px 20px;
+    padding: 60px 20px 80px 20px;
     text-align: center;
+    margin-top: 55px;
 }
 
 .hero-content {

@@ -5,20 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Teguh Arif Hidayatuloh</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        @media print {
-            body { margin: 0; padding: 0; }
-            .cv-download-btn { display: none; }
-            .navbar { display: none; }
-            @page { size: A4 portrait; margin: 10mm; }
-        }
-    </style>
 </head>
 <body>
-    <div class="cv-download-btn">
-        <button class="btn btn-primary" onclick="downloadCVPDF()">Download CV as PDF</button>
-    </div>
-
     <div id="cv-content" class="cv-container">
         <div class="cv-header">
             <div class="cv-photo">
@@ -176,19 +164,6 @@
         </section>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script>
-        function downloadCVPDF() {
-            const element = document.getElementById('cv-content');
-            const opt = {
-                margin: 10,
-                filename: 'Teguh_Arif_Hidayatuloh_CV.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
-            };
-            html2pdf().set(opt).from(element).save();
-        }
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

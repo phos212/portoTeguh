@@ -315,14 +315,26 @@ body {
     background-color: var(--gray-color);
 }
 
-.education-card {
-    max-width: 600px;
+.education-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.education-card {
     background: var(--light-color);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-top: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .education-card h3 {
@@ -516,6 +528,21 @@ body {
     position: absolute;
     left: 0;
     color: var(--primary-color);
+}
+
+.cv-education-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.cv-education-item {
+    background: var(--light-color);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive Design */
